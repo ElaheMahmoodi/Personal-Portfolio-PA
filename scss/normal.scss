@@ -1,5 +1,10 @@
-/*-----------root--------*/
-@import "./root/common";
+//-----------root--------//
 
-/*_________ page -----------*/
+@import "./root/variables";
+
+@import "./root/font";
+@import "./root/common";
+@import "./root/reset";
+
+//_________ page -----------//
 @import "./pages/index";

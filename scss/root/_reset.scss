@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  direction: rtl;
+  color: $white-color;
+  font-size: 1rem;
+  overflow-x: hidden;
+  font-weight: 200;
+  font-family: "Vazir";
+}
+
+ul {
+  list-style: none;
+  li {
+    a {
+      color: $white-color;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $white-color;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+p {
+  text-align: justify;
+}
+
+// [class^="icon-"],
+// [class*=" icon-"] {
+//   /* use !important to prevent issues with browser extensions that change fonts */
+//   font-family: "barad-icon" !important;
+//   speak: never;
+//   font-style: normal;
+//   font-weight: normal;
+//   font-variant: normal;
+//   text-transform: none;
+//   line-height: 1;
+
+//   /* Better Font Rendering =========== */
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }

@@ -1,10 +1,224 @@
-/*-----------root--------*/
-/*_________ page -----------*/
-main.home-page .site-background {
-  position: fixed;
-  left: 0;
-  top: 0;
+@font-face {
+  font-family: "Vazir";
+  src: url("../fonts/Vazir/EOT/Vazir-Thin-FD.eot");
+  src: url("../fonts/Vazir/EOT/Vazir-Thin-FD.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/Vazir/WOFF2/Vazir-Thin-FD.woff2");
+  src: url("../fonts/Vazir/TTF/Vazir-Thin-FD.ttf") format("truetype"), url("../fonts/Vazir/WOFF/Vazir-Thin-FD.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Vazir";
+  src: url("../fonts/Vazir/EOT/Vazir-Light-FD.eot");
+  src: url("../fonts/Vazir/EOT/Vazir-Light-FD.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/Vazir/WOFF2/Vazir-Light-FD.woff2") format("woff2");
+  src: url("../fonts/Vazir/TTF/Vazir-Light-FD.ttf") format("truetype"), url("../fonts/Vazir/WOFF/Vazir-Light-FD.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Vazir";
+  src: url("../fonts/Vazir/EOT/Vazir-Regular-FD.eot");
+  src: url("../fonts/Vazir/EOT/Vazir-Regular-FD.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/Vazir/WOFF2/Vazir-Regular-FD.woff2");
+  src: url("../fonts/Vazir/TTF/Vazir-Regular-FD.ttf") format("truetype"), url("../fonts/Vazir/WOFF/Vazir-Regular-FD.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Vazir";
+  src: url("../fonts/Vazir/EOT/Vazir-Medium-FD.eot");
+  src: url("../fonts/Vazir/EOT/Vazir-Medium-FD.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/Vazir/WOFF2/Vazir-Medium-FD.woff2");
+  src: url("../fonts/Vazir/TTF/Vazir-Medium-FD.ttf") format("truetype"), url("../fonts/Vazir/WOFF/Vazir-Medium-FD.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Vazir";
+  src: url("../fonts/Vazir/EOT/Vazir-Bold-FD.eot");
+  src: url("../fonts/Vazir/EOT/Vazir-Bold-FD.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/Vazir/WOFF2/Vazir-Bold-FD.woff2");
+  src: url("../fonts/Vazir/TTF/Vazir-Bold-FD.ttf") format("truetype"), url("../fonts/Vazir/WOFF/Vazir-Bold-FD.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Vazir";
+  src: url("../fonts/Vazir/EOT/Vazir-Black-FD.eot");
+  src: url("../fonts/Vazir/EOT/Vazir-Black-FD.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/Vazir/WOFF2/Vazir-Black-FD.woff2");
+  src: url("../fonts/Vazir/TTF/Vazir-Black-FD.ttf") format("truetype"), url("../fonts/Vazir/WOFF/Vazir-Black-FD.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap; }
+
+.title {
+  font-family: Vazir;
+  font-size: 7.5rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal; }
+
+.h1,
+h1 {
+  font-family: Vazir;
+  font-size: 2.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal; }
+
+.h2,
+h2 {
+  font-family: Vazir;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal; }
+
+.h3,
+h3 {
+  font-family: Vazir;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal; }
+
+.h4,
+h4 {
+  font-family: Vazir;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal; }
+
+.body,
+body {
+  font-family: Vazir;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.125rem; }
+
+*::placeholder {
+  font-family: Vazir;
+  color: #808080; }
+
+.body2 {
+  font-family: Vazir;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal; }
+
+.caption {
+  font-family: Vazir;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25rem; }
+
+.container {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 1rem; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  direction: rtl;
+  color: #ffffff;
+  font-size: 1rem;
+  overflow-x: hidden;
+  font-weight: 200;
+  font-family: "Vazir"; }
+
+ul {
+  list-style: none; }
+  ul li a {
+    color: #ffffff; }
+
+a {
+  text-decoration: none;
+  color: #ffffff; }
+
+img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1; }
+  height: auto; }
+
+p {
+  text-align: justify; }
+
+main.home-page {
+  --color-theme: #28e98c; }
+  main.home-page .site-background {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; }
+  main.home-page .anchor-menu {
+    position: fixed;
+    background-color: #000000;
+    border-radius: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    border: 0.1rem solid #808080;
+    right: 3rem; }
+    main.home-page .anchor-menu ul li {
+      padding: 0.8rem 1rem; }
+      main.home-page .anchor-menu ul li a i {
+        font-size: 1.5rem;
+        color: #808080;
+        transition: all 0.3s ease-in-out; }
+        main.home-page .anchor-menu ul li a i:hover {
+          color: var(--color-theme); }
+  main.home-page .button-menu {
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 0.1rem solid #808080;
+    border-radius: 50%;
+    position: absolute;
+    right: 3rem;
+    background-color: #000000;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    gap: 0.3rem;
+    cursor: pointer; }
+    main.home-page .button-menu:hover {
+      border: 0.1rem solid var(--color-theme); }
+      main.home-page .button-menu:hover .hamburger-menu {
+        background-color: var(--color-theme); }
+    main.home-page .button-menu .hamburger-menu {
+      width: 40%;
+      height: 0.1rem;
+      background-color: #ffffff;
+      transition: all 0.3s ease-in-out; }
+  main.home-page .sidebar-and-content {
+    display: flex;
+    flex-direction: column; }
+    main.home-page .sidebar-and-content .sidebar-container {
+      border: 0.1rem solid #808080;
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 3rem;
+      width: 25%;
+      height: 90%;
+      border-radius: 1.5rem; }
