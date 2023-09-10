@@ -58,45 +58,6 @@
   font-style: normal;
   font-display: swap; }
 
-.title {
-  font-family: Vazir;
-  font-size: 7.5rem;
-  font-style: normal;
-  font-weight: 900;
-  line-height: normal; }
-
-.h1,
-h1 {
-  font-family: Vazir;
-  font-size: 2.125rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal; }
-
-.h2,
-h2 {
-  font-family: Vazir;
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal; }
-
-.h3,
-h3 {
-  font-family: Vazir;
-  font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal; }
-
-.h4,
-h4 {
-  font-family: Vazir;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal; }
-
 .body,
 body {
   font-family: Vazir;
@@ -108,20 +69,6 @@ body {
 *::placeholder {
   font-family: Vazir;
   color: #808080; }
-
-.body2 {
-  font-family: Vazir;
-  font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal; }
-
-.caption {
-  font-family: Vazir;
-  font-size: 0.75rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.25rem; }
 
 .container {
   max-width: 1440px;
@@ -139,6 +86,9 @@ body {
   font-size: 1rem;
   overflow-x: hidden;
   font-weight: 200;
+  font-family: "Vazir"; }
+
+button {
   font-family: "Vazir"; }
 
 ul {
@@ -167,6 +117,13 @@ main.home-page {
     height: 100%;
     object-fit: cover;
     z-index: -1; }
+    main.home-page .site-background::after {
+      content: "";
+      background: linear-gradient(180deg, #070707 10%, rgba(0, 0, 0, 0));
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%; }
   main.home-page .anchor-menu {
     position: fixed;
     background-color: #000000;
@@ -177,6 +134,9 @@ main.home-page {
     justify-content: center;
     border: 0.1rem solid #808080;
     right: 3rem; }
+    @media screen and (max-width: 1220px) {
+      main.home-page .anchor-menu {
+        display: none; } }
     main.home-page .anchor-menu ul li {
       padding: 0.8rem 1rem; }
       main.home-page .anchor-menu ul li a i {
@@ -212,7 +172,9 @@ main.home-page {
       transition: all 0.3s ease-in-out; }
   main.home-page .sidebar-and-content {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
     main.home-page .sidebar-and-content .sidebar-container {
       border: 0.1rem solid #808080;
       position: fixed;
@@ -220,5 +182,78 @@ main.home-page {
       transform: translateY(-50%);
       left: 3rem;
       width: 25%;
-      height: 90%;
-      border-radius: 1.5rem; }
+      border-radius: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem 1.5rem;
+      font-size: 0.8rem;
+      gap: 1rem; }
+      @media screen and (max-width: 1220px) {
+        main.home-page .sidebar-and-content .sidebar-container {
+          position: relative;
+          width: 70%;
+          transform: translateY(0);
+          inset: 0;
+          margin-top: 3rem; } }
+      main.home-page .sidebar-and-content .sidebar-container .container-person-picture {
+        padding-inline: 1rem;
+        overflow: hidden;
+        border-radius: 1.5rem;
+        display: flex; }
+        main.home-page .sidebar-and-content .sidebar-container .container-person-picture img {
+          border-radius: 1.5rem;
+          object-fit: cover;
+          transition: all 0.5s ease-in; }
+          main.home-page .sidebar-and-content .sidebar-container .container-person-picture img:hover {
+            transform: scale(1.5); }
+      main.home-page .sidebar-and-content .sidebar-container .container-email-sidebar {
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem; }
+      main.home-page .sidebar-and-content .sidebar-container .container-loc-sidebar {
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem; }
+      main.home-page .sidebar-and-content .sidebar-container .social-media-sidebar {
+        padding-inline: 1.5rem; }
+        main.home-page .sidebar-and-content .sidebar-container .social-media-sidebar ul {
+          display: flex;
+          justify-content: center;
+          gap: 1rem; }
+          main.home-page .sidebar-and-content .sidebar-container .social-media-sidebar ul li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            border: 0.1rem solid #808080;
+            transition: all 0.3s ease-in-out;
+            font-size: 1.5rem;
+            width: 3rem;
+            height: 3rem; }
+            main.home-page .sidebar-and-content .sidebar-container .social-media-sidebar ul li:hover {
+              border: 0.1rem solid var(--color-theme); }
+              main.home-page .sidebar-and-content .sidebar-container .social-media-sidebar ul li:hover a i {
+                color: var(--color-theme); }
+            main.home-page .sidebar-and-content .sidebar-container .social-media-sidebar ul li a {
+              display: flex;
+              justify-content: center;
+              align-items: center; }
+              main.home-page .sidebar-and-content .sidebar-container .social-media-sidebar ul li a i {
+                color: #808080;
+                transition: all 0.3s ease-in-out; }
+      main.home-page .sidebar-and-content .sidebar-container .container-button-sidebar {
+        margin-block: 1rem; }
+        main.home-page .sidebar-and-content .sidebar-container .container-button-sidebar a button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 0.5rem;
+          font-size: 1rem;
+          width: 100%;
+          border-radius: 1.5rem;
+          background-color: var(--color-theme);
+          border: none;
+          outline: none;
+          padding: 0.5rem; }
+          main.home-page .sidebar-and-content .sidebar-container .container-button-sidebar a button i {
+            font-size: 1.5rem; }
