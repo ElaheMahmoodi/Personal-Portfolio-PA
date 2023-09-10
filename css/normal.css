@@ -242,7 +242,9 @@ main.home-page {
                 color: #808080;
                 transition: all 0.3s ease-in-out; }
       main.home-page .sidebar-and-content .sidebar-container .container-button-sidebar {
-        margin-block: 1rem; }
+        margin-block: 1rem;
+        border: 0.1rem solid var(--color-theme);
+        border-radius: 1.5rem; }
         main.home-page .sidebar-and-content .sidebar-container .container-button-sidebar a button {
           display: flex;
           justify-content: center;
@@ -255,5 +257,8 @@ main.home-page {
           border: none;
           outline: none;
           padding: 0.5rem; }
+          main.home-page .sidebar-and-content .sidebar-container .container-button-sidebar a button:hover {
+            background-color: #000000;
+            color: var(--color-theme); }
           main.home-page .sidebar-and-content .sidebar-container .container-button-sidebar a button i {
             font-size: 1.5rem; }

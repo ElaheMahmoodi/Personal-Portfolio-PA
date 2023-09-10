@@ -164,6 +164,8 @@ main.home-page {
       }
       .container-button-sidebar {
         margin-block: 1rem;
+        border: 0.1rem solid var(--color-theme);
+        border-radius: 1.5rem;
         a {
           button {
             display: flex;
@@ -177,6 +179,10 @@ main.home-page {
             border: none;
             outline: none;
             padding: 0.5rem;
+            &:hover {
+              background-color: $black-color;
+              color: var(--color-theme);
+            }
             i {
               font-size: 1.5rem;
             }
