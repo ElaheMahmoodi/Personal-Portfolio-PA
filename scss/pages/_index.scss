@@ -191,4 +191,47 @@ main.home-page {
       }
     }
   }
+  .main-content {
+    width: 60%;
+    translate: -10rem 0;
+    .introduce-section {
+      display: flex;
+      flex-direction: column;
+      margin-top: 3rem;
+      gap: 3rem;
+      .icon-introduce {
+        padding-inline: 1rem;
+        border: 0.1rem solid $gray-color;
+        border-radius: 1.5rem;
+        width: fit-content;
+      }
+      h1 {
+        font-size: 5rem;
+        font-weight: 400;
+        line-height: 1;
+        .text-match-themecolor {
+          color: var(--color-theme);
+        }
+      }
+      p {
+        color: $gray-color;
+      }
+      .count-project-exprience {
+        color: var(--color-theme);
+        font-size: 5rem;
+        display: flex;
+        gap: 5rem;
+        .exprience,
+        .count-project {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          :nth-child(2n) {
+            font-size: 1rem;
+            color: $gray-color;
+          }
+        }
+      }
+    }
+  }
 }

@@ -262,3 +262,38 @@ main.home-page {
             color: var(--color-theme); }
           main.home-page .sidebar-and-content .sidebar-container .container-button-sidebar a button i {
             font-size: 1.5rem; }
+  main.home-page .main-content {
+    width: 60%;
+    translate: -10rem 0; }
+    main.home-page .main-content .introduce-section {
+      display: flex;
+      flex-direction: column;
+      margin-top: 3rem;
+      gap: 3rem; }
+      main.home-page .main-content .introduce-section .icon-introduce {
+        padding-inline: 1rem;
+        border: 0.1rem solid #808080;
+        border-radius: 1.5rem;
+        width: fit-content; }
+      main.home-page .main-content .introduce-section h1 {
+        font-size: 5rem;
+        font-weight: 400;
+        line-height: 1; }
+        main.home-page .main-content .introduce-section h1 .text-match-themecolor {
+          color: var(--color-theme); }
+      main.home-page .main-content .introduce-section p {
+        color: #808080; }
+      main.home-page .main-content .introduce-section .count-project-exprience {
+        color: var(--color-theme);
+        font-size: 5rem;
+        display: flex;
+        gap: 5rem; }
+        main.home-page .main-content .introduce-section .count-project-exprience .exprience,
+        main.home-page .main-content .introduce-section .count-project-exprience .count-project {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem; }
+          main.home-page .main-content .introduce-section .count-project-exprience .exprience :nth-child(2n),
+          main.home-page .main-content .introduce-section .count-project-exprience .count-project :nth-child(2n) {
+            font-size: 1rem;
+            color: #808080; }
